@@ -229,14 +229,14 @@ header {
   margin-right: 10px;
 }
 
-.section-dignity {
+.dignity__section {
   padding-bottom: 0px;
 }
-.dignity-list {
+.dignity__list {
   display: flex;
 }
 
-.dignity-list .dignity-item:not(:first-child) {
+.dignity__item:not(:first-child) {
   margin-left: 30px;
 }
 
@@ -258,14 +258,14 @@ header {
   overflow: hidden;
 }
 
-.dignity-item {
+.dignity__item {
   list-style-type: none;
   width: 270px;
 }
 /*flex-basis: calc((100% - 90px) / 4);
 проверить почему не работает формула*/
 
-.dignity-icon {
+.dignity__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -274,14 +274,14 @@ header {
   background-color: var(--background-button-color);
 }
 
-.dignity-title {
+.dignity__title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-text-color);
   margin-bottom: 10px;
 }
-.dignity-text {
+.dignity__text {
   line-height: 1.71;
 
   color: var(--text-secondary-color);
@@ -297,16 +297,19 @@ header {
   display: flex;
   text-align: center;
 }
-.container-list .item:not(:first-child) {
+.container-list__item:not(:first-child) {
   margin-left: 30px;
 }
-.container-list .item {
+.team-member__container-list__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   position: relative;
 }
-.activity {
+.activity__container-list__item {
+  position: relative;
+}
+.activity__overlay {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -317,7 +320,7 @@ header {
   position: absolute;
   bottom: 0;
 }
-.activity-name {
+.activity__name {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.14;
@@ -326,17 +329,17 @@ header {
 .section-team {
   background-color: #f5f4fa;
 }
-.team-member {
+.team-member__overlay {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-member-name {
+.team-member__name {
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 10px;
 }
-.team-member-position {
+.team-member__position {
   font-size: 16px;
   color: var(--text-secondary-color);
   margin-bottom: 16px;
@@ -381,19 +384,17 @@ header {
 .social-links__link:focus .social-links__icon {
   fill: #ffffff;
 }
-.client-item {
+.client__container-list__item {
   width: 170px;
   height: 92px;
   background-color: #ffffff;
 }
-.container-list .client-item:not(:first-child) {
-  margin-left: 30px;
-}
-.client-link:hover,
-.client-link:focus {
+
+.client__link:hover,
+.client__link:focus {
   border-color: var(--accent-color);
 }
-.client-link {
+.client__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -404,13 +405,13 @@ header {
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client-icon {
+.client__icon {
   fill: #afb1b8;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client-link:hover .client-icon,
-.client-link:focus .client-icon {
+.client__link:hover .client__icon,
+.client__link:focus .client__icon {
   fill: var(--accent-color);
 }
 
@@ -598,7 +599,7 @@ footer {
 .subscription {
   margin-left: 93px;
 }
-.subscription-input {
+.subscription__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -612,18 +613,18 @@ footer {
   color: #ffffff;
   outline: 1px solid transparent;
 }
-.subscription-input:hover,
-.subscription-input:focus {
+.subscription__input:hover,
+.subscription__input:focus {
   border: 1px solid var(--accent-color);
 }
 
-.subscription-text {
+.subscription__text {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 14px;
   margin-bottom: 20px;
 }
-.subscription-button {
+.subscription__button {
   display: flex;
   padding: 10px 29px;
   text-align: center;
@@ -641,11 +642,11 @@ footer {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.subscription-label {
+.subscription__label {
   display: flex;
   flex-direction: row;
 }
-.subscription-icon {
+.subscription__icon {
   margin-left: 10px;
   fill: #ffffff;
 }
