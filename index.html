@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
 <header class="page-header">
@@ -385,45 +385,45 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <form class="form-modal">
-        <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
-        <label class="form-label">
-          <span class="label-text">Имя</span>
-          <span class="input-box">
-            <input type="text" class="form-input" name="user name">
-            <svg width="20px" height="20px" class="form-icon">
+        <h2 class="form-modal__text">Оставьте свои данные, мы вам перезвоним</h2>
+        <label class="form-modal__label">
+          <span class="form-modal__label-name">Имя</span>
+          <span class="form-modal__box">
+            <input type="text" class="form-modal__input" name="user name">
+            <svg width="20px" height="20px" class="form-modal__icon">
             <use href="./images/icons.svg#person-black-18dp-1"></use>
             </svg>
           </span>
         </label>
-        <label class="form-label">
-          <span class="label-text">Телефон</span>
-          <span class="input-box">
-            <input type="tel" class="form-input" name="user phone">
-          <svg class="form-icon" width="20px" height="20px">
+        <label class="form-modal__label">
+          <span class="form-modal__label-name">Телефон</span>
+          <span class="form-modal__box">
+            <input type="tel" class="form-modal__input" name="user phone">
+          <svg class="form-modal__icon" width="20px" height="20px">
           <use href="./images/icons.svg#phone-black-18dp-1"></use>
           </svg>
           </span>
         </label>
-        <label class="form-label">
-          <span class="label-text">Почта</span>
-          <span class="input-box">
-         <input type="email" class="form-input" name="user mail">
-          <svg class="form-icon" width="20px" height="20px">
+        <label class="form-modal__label">
+          <span class="form-modal__label-name">Почта</span>
+          <span class="form-modal__box">
+         <input type="email" class="form-modal__input" name="user mail">
+          <svg class="form-modal__icon" width="20px" height="20px">
           <use href="./images/icons.svg#email-black-18dp-1"></use>
           </svg>
           </span>
         </label>
-        <label class="form-label-comments">
-          <span class="label-text">Комментарий</span>
-          <textarea name="user comments" class="form-comments" placeholder="Введите текст"></textarea>
+        <label class="form-modal__label-comments">
+          <span class="form-modal__label-name">Комментарий</span>
+          <textarea name="user comments" class="form-modal__comments" placeholder="Введите текст"></textarea>
         </label>
-        <label class="form-agree">
-          <input type="checkbox" class="input-checkbox visually-hidden" name="input-checkbox">
-          <svg class="icon-agree" width="16px" height="15px">
+        <label class="form-modal__agree">
+          <input type="checkbox" class="form-modal__input-checkbox visually-hidden" name="input-checkbox">
+          <svg class="form-modal__icon-agree" width="16px" height="15px">
             <use href="./images/icons.svg#icon check"></use>
           </svg>
-          <span class="agree-text">Соглашаюсь с рассылкой и принимаю</span>
-          <a href="" class="agree-link">Условия договора</a>
+          <span class="form-modal__agree-text">Соглашаюсь с рассылкой и принимаю</span>
+          <a href="" class="form-modal__agree-link">Условия договора</a>
         </label>
         <Button type="submit" class="submit-button">Отправить</Button>
       </form>
