@@ -65,6 +65,10 @@ header {
 .section--no-padding-top {
   padding-top: 0px;
 }
+.section--other-background {
+  background-color: #f5f4fa;
+}
+
 .section__title {
   font-weight: 700;
   font-size: 36px;
@@ -82,17 +86,7 @@ header {
   padding: 0px;
   overflow: hidden;
 }
-/*.container-list,
-.site-nav,
-.contacts,
-.social-links {
-  list-style-type: none;
-}*/
 
-/*.container-list {
-  display: flex;
-  text-align: center;
-*/
-&__item:not(:first-child) {
+/*&__item:not(:first-child) {
   margin-left: 30px;
-}
+}*/

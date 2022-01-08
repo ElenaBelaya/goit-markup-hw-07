@@ -62,6 +62,10 @@ header {
   padding-top: 0px;
 }
 
+.section--other-background {
+  background-color: #f5f4fa;
+}
+
 .section__title {
   font-weight: 700;
   font-size: 36px;
@@ -81,23 +85,9 @@ header {
   overflow: hidden;
 }
 
-/*.container-list,
-.site-nav,
-.contacts,
-.social-links {
-  list-style-type: none;
-}*/
-.container-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-}
-
-.container-list__item:not(:first-child) {
+/*&__item:not(:first-child) {
   margin-left: 30px;
-}
-
+}*/
 .logo {
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -325,10 +315,24 @@ header {
   color: #757575;
 }
 
+.activity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin-top: 50px;
+}
+
 .activity__item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   position: relative;
   width: calc((100% - 2 * 30px) / 3);
-  margin-top: 50px;
+}
+
+.activity__item:not(:first-child) {
+  margin-left: 30px;
 }
 
 .activity__overlay {
@@ -349,35 +353,44 @@ header {
   bottom: 0;
 }
 
-.activity__name {
+.activity__title {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.14;
 }
 
-.section-team {
-  background-color: #f5f4fa;
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.team-member__container-list__item {
+.team__item {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   position: relative;
 }
 
-.team-member__overlay {
+.team__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.team__overlay {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-member__name {
+.team__name {
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 10px;
 }
 
-.team-member__position {
+.team__position {
   font-size: 16px;
   color: #757575;
   margin-bottom: 16px;
