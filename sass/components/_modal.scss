@@ -55,34 +55,31 @@
   display: block;
   padding: 40px;
 
-  &__text {
+  .form-modal__text {
     margin-bottom: 12px;
   }
 
-  &__label {
+  .form-modal__label {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
   }
 
-  &__label-comments {
+  .form-modal__label-comments {
     display: flex;
     flex-direction: column;
-  }
-
-  &__label-comments {
     margin-bottom: 20px;
   }
 
-  &__box {
+  .form-modal__box {
     position: relative;
   }
-  &__label-name {
+  .form-modal__label-name {
     font-size: 12px;
     color: #757575;
     margin-bottom: 4px;
   }
-  &__input {
+  .form-modal__input {
     padding-left: 42px;
     width: 100%;
     height: 40px;
@@ -98,51 +95,56 @@
     fill: $accent-color;
   }
 
-  &__comments {
+  .form-modal__comments {
     padding: 12px 16px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    &:focus {
+      border: 1px solid #2196f3;
+      outline: 1px solid transparent;
+    }
+    &::placeholder {
+      color: rgba(117, 117, 117, 0.5);
+    }
   }
-  &__comments::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-  }
-  &__agree {
+
+  .form-modal__agree {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
   }
-
-  &__input-checkbox {
-    margin-right: 9px;
-  }
-
-  &__agree-text {
+  .form-modal__agree-text {
     color: $text-secondary-color;
     text-decoration: none;
     margin-right: 4px;
   }
-
-  &__agree-link {
+  .form-modal__agree-link {
     color: $accent-color;
   }
-  &__icon {
+  .form-modal__input-checkbox {
+    margin-right: 9px;
+
+    &:checked + .form-modal__icon-agree {
+      background-color: $accent-color;
+      border: 1px solid transparent;
+      border-radius: 2px;
+      margin-right: 9px;
+    }
+  }
+  .form-modal__icon {
     position: absolute;
     top: 0px;
     left: 15px;
     transform: translateY(50%);
     fill: #212121;
   }
-  &__input-checkbox:checked + &__icon-agree {
-    background-color: $accent-color;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    margin-right: 9px;
-  }
-  &__icon-agree {
+
+  .form-modal__icon-agree {
     fill: #ffffff;
     background-color: #ffffff;
     border: 1px solid #212121;
