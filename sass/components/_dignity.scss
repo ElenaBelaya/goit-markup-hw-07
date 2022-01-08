@@ -1,12 +1,7 @@
 .dignity {
-  &__section {
-    padding-bottom: 0px;
-  }
-  &__list {
-    display: flex;
-  }
+  display: flex;
 
-  &__item {
+  .dignity__item {
     list-style-type: none;
     width: 270px;
   }
