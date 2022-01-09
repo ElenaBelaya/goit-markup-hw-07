@@ -85,14 +85,12 @@
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-  }
-  &__input:focus,
-  &__comments:focus {
-    border: 1px solid #2196f3;
-    outline: 1px solid transparent;
-  }
-  &__input:focus + &__icon {
-    fill: $accent-color;
+
+    &:focus,
+    &:focus {
+      border: 1px solid #2196f3;
+      outline: 1px solid transparent;
+    }
   }
 
   .form-modal__comments {
@@ -142,6 +140,9 @@
     left: 15px;
     transform: translateY(50%);
     fill: #212121;
+  }
+  .form-modal__input:focus + .form-modal__icon {
+    fill: $accent-color;
   }
 
   .form-modal__icon-agree {
