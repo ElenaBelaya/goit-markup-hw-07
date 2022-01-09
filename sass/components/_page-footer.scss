@@ -36,80 +36,69 @@ footer {
   }
 }
 
-.container-join {
+.join {
   flex-direction: column;
   margin-left: 70px;
-
-  &__social-links__icon {
-    fill: #ffffff;
-  }
-
-  &__title {
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-bottom: 20px;
-  }
 }
-.social-links__container-join {
+.join__title,
+.subscription__title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/*.social-links__container-join {
   padding-bottom: 0px;
-}
+}*/
 
 .subscription {
   margin-left: 93px;
+}
+.subscription__input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: #2f303a;
+  font-size: 16px;
+  line-height: 1.25;
+  padding: 0px;
+  padding-left: 16px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  outline: 1px solid transparent;
 
-  &__input {
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    background-color: #2f303a;
-    font-size: 16px;
-    line-height: 1.25;
-    padding: 0px;
-    padding-left: 16px;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-    outline: 1px solid transparent;
-  }
-
-  &__input:hover,
-  &__input:focus {
+  &:hover,
+  &:focus {
     border: 1px solid $accent-color;
   }
+}
 
-  .subscription__text {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
+.subscription__button {
+  display: flex;
+  padding: 10px 29px;
+  text-align: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  padding: 10px auto;
+  margin-left: 12px;
+  color: #ffffff;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
-  &__button {
-    display: flex;
-    padding: 10px 29px;
-    text-align: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    width: 200px;
-    height: 50px;
-    padding: 10px auto;
-    margin-left: 12px;
-    color: #ffffff;
-    background-color: $accent-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
-
-  &__label {
-    display: flex;
-    flex-direction: row;
-  }
-  &__icon {
-    margin-left: 10px;
-    fill: #ffffff;
-  }
+.subscription__label {
+  display: flex;
+  flex-direction: row;
+}
+.subscription__icon {
+  margin-left: 10px;
+  fill: #ffffff;
 }

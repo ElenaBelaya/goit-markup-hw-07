@@ -5,16 +5,15 @@
   line-height: 1.19;
   color: $accent-color;
   text-decoration: none;
+}
+.logo__text {
+  color: #000000;
 
-  &__text {
-    color: #000000;
-  }
-
-  .logo-footer__text {
+  &--white-color {
     color: #ffffff;
   }
-  &.logo-footer__logo {
-    margin-bottom: 20px;
-    display: inline-block;
-  }
+}
+.logo-footer__logo {
+  margin-bottom: 20px;
+  display: inline-block;
 }

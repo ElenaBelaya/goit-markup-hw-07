@@ -44,11 +44,11 @@
 .modal-svg {
   width: 18px;
   height: 18px;
-}
 
-.close-modal:hover .modal-svg,
-.close-modal:focus .modal-svg {
-  fill: $accent-color;
+  .close-modal:hover &,
+  .close-modal:focus & {
+    fill: $accent-color;
+  }
 }
 
 .form-modal {
