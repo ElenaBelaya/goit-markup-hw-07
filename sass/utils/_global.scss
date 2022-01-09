@@ -33,7 +33,8 @@ header {
 .section--other-background {
   background-color: #f5f4fa;
 }
-.section__title--visually-hidden {
+.section__title--visually-hidden,
+.agree__checkbox-visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
